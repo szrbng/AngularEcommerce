@@ -20,17 +20,17 @@ namespace E_Commerce.API.Controllers
 
 
         [HttpGet]
-        public ActionResult<List<Product>> GetAll()
+        public async Task<ActionResult<List<Product>>> GetAll()
         {
-            var productAll =  _context.Products.ToList();
+            var productAll = await _context.Products.ToListAsync();
 
             return productAll;
         }
 
         [HttpGet("{id}")]
-        public  ActionResult<Product> Get(int id)
+        public async Task<ActionResult<Product>>Get(int id)
         {
-            var product =  _context.Products.FirstOrDefault(p => p.Id == id);
+            var product =await  _context.Products.FirstOrDefaultAsync(p => p.Id == id);
 
             return product;
         }
