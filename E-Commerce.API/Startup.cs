@@ -1,4 +1,4 @@
-using DAL.API.DataContext;
+using API.Infrastructure.DataContext;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -22,7 +22,7 @@ namespace E_Commerce.API
         {
             services.AddControllers();
 
-            services.AddDbContext<StoreContext>(s => s.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"),y=>y.MigrationsAssembly("E-Commerce.API")));
+            services.AddDbContext<StoreContext>(s => s.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"),y=>y.MigrationsAssembly("API.Infrastructure")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

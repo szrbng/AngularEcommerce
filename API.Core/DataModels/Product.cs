@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DAL.API.DataModels
+namespace API.Core.DataModels
 {
     public class Product
     {

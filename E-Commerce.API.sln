@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-Commerce.API", "E-Commerce.API\E-Commerce.API.csproj", "{BF72CEF0-AD2E-4025-A4E8-01A4368FC300}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-Commerce.API", "E-Commerce.API\E-Commerce.API.csproj", "{BF72CEF0-AD2E-4025-A4E8-01A4368FC300}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL.API", "DAL.API\DAL.API.csproj", "{99586EFD-C91F-452C-9226-BC6513499503}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API.Core", "API.Core\API.Core.csproj", "{5060B299-111C-4C68-9671-0B2A5A55AB41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API.Infrastructure", "API.Infrastructure\API.Infrastructure.csproj", "{05EE49AF-453F-474F-A513-610FACE177AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +19,14 @@ Global
 		{BF72CEF0-AD2E-4025-A4E8-01A4368FC300}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF72CEF0-AD2E-4025-A4E8-01A4368FC300}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF72CEF0-AD2E-4025-A4E8-01A4368FC300}.Release|Any CPU.Build.0 = Release|Any CPU
-		{99586EFD-C91F-452C-9226-BC6513499503}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{99586EFD-C91F-452C-9226-BC6513499503}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{99586EFD-C91F-452C-9226-BC6513499503}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{99586EFD-C91F-452C-9226-BC6513499503}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5060B299-111C-4C68-9671-0B2A5A55AB41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5060B299-111C-4C68-9671-0B2A5A55AB41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5060B299-111C-4C68-9671-0B2A5A55AB41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5060B299-111C-4C68-9671-0B2A5A55AB41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05EE49AF-453F-474F-A513-610FACE177AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05EE49AF-453F-474F-A513-610FACE177AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05EE49AF-453F-474F-A513-610FACE177AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05EE49AF-453F-474F-A513-610FACE177AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

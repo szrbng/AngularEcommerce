@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace E_Commerce.API.Migrations
+namespace API.Infrastructure.Migrations
 {
-    public partial class Initial : Migration
+    public partial class mg : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

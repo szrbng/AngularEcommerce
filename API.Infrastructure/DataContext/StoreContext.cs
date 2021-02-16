@@ -1,12 +1,12 @@
-﻿using DAL.API.DataModels;
+﻿using API.Core.DataModels;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace DAL.API.DataContext
+namespace API.Infrastructure.DataContext
 {
-    public class StoreContext :DbContext
+    public class StoreContext : DbContext
     {
         public StoreContext(DbContextOptions options):base(options)
         {

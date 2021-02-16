@@ -1,9 +1,8 @@
-﻿using DAL.API.DataContext;
-using DAL.API.DataModels;
+﻿using API.Core.DataModels;
+using API.Infrastructure.DataContext;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace E_Commerce.API.Controllers
