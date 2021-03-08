@@ -1,4 +1,6 @@
+using API.Core.Interfaces;
 using API.Infrastructure.DataContext;
+using API.Infrastructure.Implements;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -20,8 +22,10 @@ namespace E_Commerce.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped(typeof(IGenericRepository<>),(typeof(GenericRepository<>)));
             services.AddControllers();
-
+            //services.AddTransient();
             services.AddDbContext<StoreContext>(s => s.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"),y=>y.MigrationsAssembly("API.Infrastructure")));
         }
 
